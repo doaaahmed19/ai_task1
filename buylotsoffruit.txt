@@ -1,0 +1,19 @@
+Prices = {'apples':2.00, 
+'oranges': 1.50,
+'pears': 1.75,
+'limes':0.75,
+'strawberries':1.00}
+
+def buyLotsOfFruit(myList):
+    total = 0
+    for fruit,pound in myList:
+        if fruit not in Prices:
+            print ("ERROR :NOT FOUND")
+        else:
+          for Fruit,price in Prices.items():
+                 if fruit==Fruit:
+                    total+=price*pound
+    return  total
+
+myList=[('apples', 2.0), ('pears', 3.0) ,('limes',4.0)]
+print("cost of",myList,"is",buyLotsOfFruit(myList))

@@ -1,0 +1,10 @@
+def add(a,b):
+    
+    sum = a+b
+    print (f"{a} + {b} = {sum}")
+
+a=int(input("enter the first number "))
+b=int(input("enter the second number "))
+add(a,b)
+    
+    
